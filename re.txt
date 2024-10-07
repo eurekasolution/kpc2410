@@ -7,3 +7,74 @@ test홍길동abc이순신세종
 m[ao]t
 
 010-[0-9]{4}-[0-9]{4}
+
+순서    이름    생년    지역
+
+create table user (
+    idx integer auto_increment primary key,
+    name char(20),
+    birth date,
+    area  char(20)
+
+
+
+insert into user (idx, name, birth, area) values ('1', '유관순', '1645-04-13', '대전');
+
+
+\t  --> ','
+$   --> ');
+^   --> insert into user (idx, name, birth, area) values ('
+
+
+
+insert into user (idx, name, birth, area) values ('1','유관순','1645-04-13','대전');
+insert into user (idx, name, birth, area) values ('2','이항복','1882-01-12','제주');
+insert into user (idx, name, birth, area) values ('3','정철','1531-10-26','서울');
+insert into user (idx, name, birth, area) values ('4','김홍도','1635-06-06','대전');
+insert into user (idx, name, birth, area) values ('5','허준','1690-12-26','제주');
+insert into user (idx, name, birth, area) values ('6','정약용','1761-09-01','서울');
+insert into user (idx, name, birth, area) values ('7','율곡 이이','1557-01-02','대전');
+insert into user (idx, name, birth, area) values ('8','정도전','1856-11-02','서울');
+insert into user (idx, name, birth, area) values ('9','정약용','1857-11-06','대전');
+insert into user (idx, name, birth, area) values ('10','박지원','1697-03-21','서울');
+insert into user (idx, name, birth, area) values ('11','임경업','1857-06-18','서울');
+insert into user (idx, name, birth, area) values ('12','박지원','1899-06-09','경기');
+insert into user (idx, name, birth, area) values ('13','정도전','1981-10-19','서울');
+insert into user (idx, name, birth, area) values ('14','임경업','1848-03-12','대전');
+insert into user (idx, name, birth, area) values ('15','허준','1645-01-14','제주');
+insert into user (idx, name, birth, area) values ('16','정철','1610-07-14','대전');
+insert into user (idx, name, birth, area) values ('17','김홍도','1869-09-09','제주');
+insert into user (idx, name, birth, area) values ('18','이항복','1865-03-11','제주');
+insert into user (idx, name, birth, area) values ('19','장희빈','1840-10-01','대전');
+insert into user (idx, name, birth, area) values ('20','세종대왕','1798-03-25','대전');
+insert into user (idx, name, birth, area) values ('21','박지원','1855-03-17','경기');
+insert into user (idx, name, birth, area) values ('22','임경업','1736-02-14','경기');
+insert into user (idx, name, birth, area) values ('23','장영실','1967-03-11','경기');
+insert into user (idx, name, birth, area) values ('24','장영실','1685-11-13','제주');
+insert into user (idx, name, birth, area) values ('25','정철','1862-05-13','서울');
+insert into user (idx, name, birth, area) values ('26','정도전','1774-08-09','제주');
+insert into user (idx, name, birth, area) values ('27','허준','1767-10-16','제주');
+insert into user (idx, name, birth, area) values ('28','김정희','1851-08-13','제주');
+insert into user (idx, name, birth, area) values ('29','정도전','1900-05-07','제주');
+insert into user (idx, name, birth, area) values ('30','김정희','1683-08-08','서울');
+insert into user (idx, name, birth, area) values ('31','정약용','1606-05-25','대전');
+insert into user (idx, name, birth, area) values ('32','박지원','1522-03-25','제주');
+insert into user (idx, name, birth, area) values ('33','김정희','1979-05-25','제주');
+insert into user (idx, name, birth, area) values ('34','신사임당','1814-02-13','서울');
+insert into user (idx, name, birth, area) values ('35','김홍도','1790-11-20','서울');
+insert into user (idx, name, birth, area) values ('36','율곡 이이','1626-08-09','서울');
+insert into user (idx, name, birth, area) values ('37','정도전','1582-07-11','제주');
+insert into user (idx, name, birth, area) values ('38','김정희','1977-09-01','대전');
+insert into user (idx, name, birth, area) values ('39','신숙주','1591-04-21','경기');
+insert into user (idx, name, birth, area) values ('40','정철','1961-04-19','대전');
+insert into user (idx, name, birth, area) values ('41','김홍도','1862-09-02','대전');
+insert into user (idx, name, birth, area) values ('42','이항복','1777-04-19','대전');
+insert into user (idx, name, birth, area) values ('43','신숙주','1668-02-18','대전');
+insert into user (idx, name, birth, area) values ('44','정도전','1875-03-19','제주');
+insert into user (idx, name, birth, area) values ('45','허준','1624-05-24','서울');
+insert into user (idx, name, birth, area) values ('46','김홍도','1998-03-03','제주');
+insert into user (idx, name, birth, area) values ('47','김홍도','1922-10-11','대전');
+insert into user (idx, name, birth, area) values ('48','신사임당','1911-02-18','서울');
+insert into user (idx, name, birth, area) values ('49','허준','1785-07-02','서울');
+insert into user (idx, name, birth, area) values ('50','임경업','1867-05-27','제주');
+insert into user (idx, name, birth, area) values ('');
