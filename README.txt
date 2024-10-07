@@ -64,3 +64,41 @@ localhost/phpmyadmin
 _ 세션정보가 없으면 아이디(id), 비번(pass)으로 로그인 입력창 만들기
 
 - body에는 $cmd = $_GET["cmd"]; 에서 $cmd가 없으면 init.php를 include하고, $cmd가 있으면 include "$cmd.php"
+
+
+
+login.php 를 다운받아서 login.php 파일을 만들고 붙여넣기 후 저장(Ctrl+s)
+
+172.30.1.72
+
+javascript:alert(document.cookie);
+
+$data["content"]
+
+안녕하세요
+<script>
+    for(var i=1; i<=3; i++) alert(i);
+</script>
+
+<  : &lt;
+>  : &gt;
+
+HTML : Hyper Text Markup Language
+
+<b>동해물과<u>백두산이</u></b> 마르고 닳도록
+
+
+1.2.3.4
+
+0000000
+1111111
+
+0000 0000
+0111 1111 0~ 127 : A class
+1000 0000 1011 111 : 128 : 191 B class
+
+150.30.*. *
+
+1100 0000 1101111
+
+https://www.security.org/how-secure-is-my-password/ 

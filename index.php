@@ -30,7 +30,7 @@ $conn = connectDB();
                         메뉴1
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="?cmd=menu1-1">메뉴1-1</a></li>
+                        <li><a class="dropdown-item" href="index.php?cmd=bbs">게시판</a></li>
                         <li><a class="dropdown-item" href="?cmd=menu1-2">메뉴1-2</a></li>
                     </ul>
                 </li>
@@ -58,8 +58,10 @@ $conn = connectDB();
 </nav>
 
 <div class="container mt-4">
+    강사 PC<br>
+
     <?php if (isset($_SESSION["sess_id"])): ?>
-        <p><?= $_SESSION["sess_id"]; ?>님 <button class="btn btn-danger" onclick="location.href='logout.php'">로그아웃</button></p>
+        <p><?= $_SESSION["sess_id"]; ?>님 <button class="btn btn-danger" onclick="location.href='index.php?cmd=logout'">로그아웃</button></p>
     <?php else: ?>
         <form action="index.php?cmd=login" method="post">
             <div class="mb-3">
