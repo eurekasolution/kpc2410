@@ -1,9 +1,14 @@
 <?php
 // 세션 시작
+session_save_path("./sess");
 session_start();
+
+include "db.php";
+$conn = connectDB();
+
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +61,7 @@ session_start();
     <?php if (isset($_SESSION["sess_id"])): ?>
         <p><?= $_SESSION["sess_id"]; ?>님 <button class="btn btn-danger" onclick="location.href='logout.php'">로그아웃</button></p>
     <?php else: ?>
-        <form action="login.php" method="post">
+        <form action="index.php?cmd=login" method="post">
             <div class="mb-3">
                 <label for="id" class="form-label">아이디</label>
                 <input type="text" class="form-control" id="id" name="id" required>
