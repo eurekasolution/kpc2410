@@ -1,0 +1,9 @@
+abcd map mat mother
+aaaa010-1234-5a78bbbb010-1111-1234dskfdaslk
+test홍길동abc이순신세종
+abcd map mat mother
+aaaa010-1234-5a78bbbb010-1111-1234dskfdaslk
+test홍길동abc이순신세종
+m[ao]t
+
+010-[0-9]{4}-[0-9]{4}
