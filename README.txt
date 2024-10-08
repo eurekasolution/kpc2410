@@ -137,3 +137,21 @@ https://zaproxy.org
 
 
 <img src='a.jpg' alt='보안강의'>
+
+void copy(char *str)
+{
+    char buf[100];
+
+    strcpy(buf, str);
+    printf("buf = %s\n", buf);
+}
+
+./test hello
+./test "hello world"
+
+int main(int argc, char **argv)
+{
+    copy(argv[1]);
+
+    return 0;
+}
