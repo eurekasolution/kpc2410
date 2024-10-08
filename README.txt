@@ -101,4 +101,39 @@ HTML : Hyper Text Markup Language
 
 1100 0000 1101111
 
+Web proxy
+
+
 https://www.security.org/how-secure-is-my-password/ 
+
+create table bbs (
+    idx integer auto_increment primary key,
+    title   varchar(100),
+    name    varchar(100),
+    html    mediumtext,
+    time    datetime
+);
+
+bbs table 스키마가 위와 같아.
+다음 조건을 만족하는 bbs.php 파일을 하나 제안해 줘.
+- HTML5와 Bootstrap5로 구성
+- index.php파일은 $cmd = $_GET["cmd"];일 때 $cmd가 없으면 include "init.php"
+- $cmd가 있을 때는 include "$cmd.php"로 동작
+- bbs는 $mode로 동작을 구분
+- $mode = $_GET["mode"];
+- $mode 가 없으면 $mode = "list";
+- $mode에는 글쓰기(write), 목록보기(list), 글보기(show)가 있음.
+- 목록 보기는 bbs테이블의 정보를 제목, 작성자, 작성일을 테이블 형태로 표시
+- 목록의 제목을 클릭하면 index.php?cmd=bbs&mode=show&idx=키값
+- 목록보기 하단에는 "글쓰기" 버튼
+- 글쓰기 버튼은 index.php?cmd=bbs&mode=write로 이동
+- 글쓰기는 제목(title) 작성자(name), 내용(html)을 입력 받아 등록버튼 클릭시 mode=db_write에서
+  bbs테이블에 등록버튼
+- 글내용 보기는 idx값을 보고 bbs테이블 정보를 가져와 출력
+
+
+http://www.daum.net
+https://zaproxy.org
+
+
+<img src='a.jpg' alt='보안강의'>
